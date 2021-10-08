@@ -24,11 +24,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         questionTextView = findViewById(R.id.question_text_view);
         trueButton = findViewById(R.id.true_button);
         falseButton = findViewById(R.id.false_button);
         nextButton = findViewById(R.id.next_button);
+        showCurrentQuestion();
 
         trueButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void checkAnswerCorrectness(boolean userAnswer) {
-        boolean correctAnswer = questions[currentQuestionIndex].getIsTrue();
+        boolean correctAnswer = questions[currentQuestionIndex].isTrue();
         int messageId;
         if (userAnswer == correctAnswer)
             messageId = R.string.correct_answer;
