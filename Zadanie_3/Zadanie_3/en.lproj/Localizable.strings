@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  Zadanie_3
+
+  Created by Modzel on 18/10/2021.
+  
+*/
+"Information" = "Information";
+"The faculty is running %i programs at graduate and undergraduate level." = "The faculty is running %i programs at graduate and undergraduate level.";
+"image" = "wi-en";
